@@ -1,4 +1,150 @@
+/* Import Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&display=swap');
+/* Import Font Awsome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+/* My Custom CSS Var */
+:root{
+    --color-primary:#ff014f;
+}
+/* For All Section Style */
 body{
     font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ECF0F3;
 }
+h1, h2, h3{
+    margin: 0;
+}
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.3em;
+}
+.container{
+    width: 80%;
+    height: 100px;
+}
+a{
+    text-decoration: none;
+}
+.color-primary{
+    color: var(--color-primary);
+}
+ /*===============================================*\
+  *= Header Area  Section | Code Start From Here =*
+ \*===============================================*/
+
+/**************** Top-Header Start ****************/
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+.brand-name h2{
+    transition: .3s;
+}
+.brand-name h2:hover, .menu li a:hover{
+    text-decoration: underline;
+    cursor:pointer;
+    color:var(--color-primary);
+}
+.menu ul{
+    list-style: none;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li a{
+    padding: 10px 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.menu li a.active{
+    text-decoration: underline;
+}
+.menu li a:hover{
+    /* color: white;
+    background-image: linear-gradient(
+        45deg, #F0001F, #ff004f); */
+    font-size: 1.1em;
+    color: #ff014f;
+    background: linear-gradient(45deg, #FFFFFF 0%, #F4F4F4 50%, #FFFFFF 100%);
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,.15);
+}
+/************** Bottom-Header Start ***************/
+.bottom-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature h1{
+    font-size: 3.5em;
+    transition: .3s;
+}
+.feature h1:hover{
+    color: var(--color-primary);
+    font-size: 3.6em;
+}
+.feature p{
+    margin: 20px 0px;
+}
+.btn-primary{
+    color: white;
+    background-color: var(--color-primary);
+    font-size: 1.5em;
+    border-radius: 5px;
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 15px 0px;
+    transition: 0.3s;
+}
+.btn-primary:hover{
+    background-color:white;
+    outline: 3px solid var(--color-primary);
+    color: var(--color-primary);
+}
+.move-right:hover .fa{
+    transform: translateX(15px);
+}
+.feature-img{
+    background-color: aquamarine;
+    border-radius: 50%;
+    transition: 1s;
+}
+.feature-img:hover{
+    transform: rotate(40deg);
+}
+
+/* -------- Camera Light Effict Start ----------- */
+
+#himg{
+    position: absolute;
+    transform: rotate(158deg);
+    height: 300px;
+    left: 100%;
+    width: 100%;
+    z-index: 100;
+} 
+#wrapper:hover #himg{
+    left: -35%;
+    transition-delay: .5s;
+}
+#child-a:hover #himg{
+    left: 100%;
+}
+
+/* --------- Camera Light Effict End ------------ */
+
+ /*===============================================*\
+  *== Header Area  Section | Code End From Here ==*
+ \*===============================================*/
+
+
+ /*===============================================*\
+  *== Header Area  Section | Code End From Here ==*
+ \*===============================================*/
