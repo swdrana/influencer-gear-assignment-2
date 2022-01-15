@@ -312,6 +312,141 @@ footer a{
 
 
 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+    .top-header{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul{
+        padding: 0;
+        text-align: center;
+    }
+    nav li{
+        display: block;
+    }
+    .feature h1{
+        font-size: 2em;
+    }
+    .feature-img img{
+        width: 250px;
+    }
+    .all-product{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .bottom-header {
+       flex-direction: column;
+    }
+    #light-effect{
+        display: none;
+    }
+    .all-product{
+        gap: 30px;
+    }
+    .single-product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .single-product img{
+        width: 70%;
+    }
+    .btn-simple {
+        margin: 0 auto;
+        width: 140px;
+    }
+    .container {
+        width: 90%;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    #child-a{
+        text-align: center;
+    }
+    .feature h1{
+        font-size: 2em;
+    }
+    #wrapper:hover #light-effect{
+        display: none;
+    }
+    .feature-img img{
+        width: 250px;
+    }
+    .container {
+        width: 90%;
+    }
+    .all-product {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .single-product img {
+        width: 100%;
+    }
+    .btn-simple {
+        margin: 0 auto;
+        width: 140px;
+    }
+    .contact h2{
+        font-size: 2em;
+    }
+    .contact input{
+        width: 40%;
+    }
+    .contact input {
+        width: 90%;
+    }
+    textarea{
+        width: 90%;
+    }
+    hr {
+        margin: 0px 0px 50px 0px;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1024px) {
+    #wrapper:hover #light-effect {
+        top: 320px;
+        left: -400px
+    }
+    .feature-img img{
+        width: 300px;
+    }
+    .feature h1{
+        font-size: 2.5em;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    #wrapper:hover #light-effect{
+        top: 350px;
+    }
+}
+@media only screen and (min-width: 1441px) {
+    #wrapper:hover #light-effect {
+        top: 580px;
+        left: -510px;
+    }
+    textarea{
+        height: 200px;
+        width: 62%;
+    }
+    .single-product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .single-product img{
+        width: 60%;
+    }
+}
+
+
 /*===============================================*\
  *=+=+=+=+=+=+=+=+=+= CSS END =+=+=+=+=+=+=+=+=+=*
 \*===============================================*/
