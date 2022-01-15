@@ -187,7 +187,7 @@ hr {
 
 
  /*===============================================*\
-  *== Header Area  Section | Code End From Here ==*
+  *== Main Area  Section | Code End From Here ==*
  \*===============================================*/
 .all-product{
     display: grid;
@@ -238,7 +238,7 @@ hr {
     transform: translateX(15px);
 }
 /*===============================================*\
- *=== Main Area  Section | Code End From Here ===*
+ *== Contact Area  Section | Code Start From Here ==*
 \*===============================================*/
 .contact{
     text-align: center;
@@ -309,3 +309,9 @@ footer a{
 .fa-youtube-square:hover{
     color: #E33122;
 }
+
+
+
+/*===============================================*\
+ *=+=+=+=+=+=+=+=+=+= CSS END =+=+=+=+=+=+=+=+=+=*
+\*===============================================*/
