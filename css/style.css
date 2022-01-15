@@ -29,7 +29,7 @@ h3{
 }
 .container{
     width: 80%;
-    margin: 100px auto;
+    margin: 80px auto;
 }
 ul{
     list-style: none;
@@ -49,6 +49,31 @@ hr {
     height: 1px;
     border: none;
     background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #c0c4c6));
+}
+
+/* hover-underline-animation */
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
  /*===============================================*\
@@ -128,6 +153,7 @@ hr {
     border: 1px solid #c0c4c6;
     border-radius: 50%;
     transition: 1s;
+    margin-left: 20px;
 }
 .feature-img:hover{
     transform: rotate(40deg);
@@ -139,16 +165,18 @@ hr {
     position: absolute;
     transform: rotate(158deg);
     height: 300px;
-    left: 100%;
     width: 100%;
     z-index: 100;
+    display: none;
 } 
 #wrapper:hover #light-effect{
+    display: inline-block;
     left: -35%;
     transition-delay: .5s;
+    top: 400px;
 }
 #child-a:hover #light-effect{
-    left: 100%;
+    display: none;
 }
 
 /* --------- Camera Light Effict End ------------ */
@@ -193,11 +221,51 @@ hr {
 .single-product p{
     margin: 10px 0px;
 }
-
+/* See More button  */
+.btn-simple{
+    font-size: 1.5em;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 15px 0px;
+    transition: 0.2s;
+    text-align: right;
+    margin-right: 10%;;
+}
+.btn-simple:hover{
+    color: var(--color-primary);
+}
+.btn-simple .move-right:hover .fa{
+    transform: translateX(15px);
+}
 /*===============================================*\
  *=== Main Area  Section | Code End From Here ===*
 \*===============================================*/
-
+.contact{
+    text-align: center;
+}
+.contact h2{
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+.contact h2:hover{
+    color: var(--color-primary);
+}
+.contact input{
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    margin-right: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    width: 30%;
+}
+textarea{
+    height: 100px;
+    border: 1px solid var(--color-primary);
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 64%;
+}
 
 /*===============================================*\
  *== Footer Area Section| Code Start From Here ==*
@@ -207,6 +275,7 @@ footer{
     color: white;
     text-align: center;
     padding: 50px 0px;
+    margin-top: 60px;
  }
 footer h2:hover{
     color: var(--color-primary);
