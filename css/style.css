@@ -11,10 +11,11 @@ body{
     font-family: 'Rajdhani', sans-serif;
     margin: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #ECF0F3;
 }
-h1, h2, h3{
+h1, h2, h3, p{
     margin: 0;
 }
 h1{
@@ -23,9 +24,18 @@ h1{
 h2{
     font-size: 2.3em;
 }
+h3{
+    font-size: 1.5em;
+}
 .container{
     width: 80%;
-    height: 100px;
+    margin: 100px auto;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
 }
 a{
     text-decoration: none;
@@ -34,17 +44,24 @@ a{
 .color-primary{
     color: var(--color-primary);
 }
+hr {
+    margin: 30px 0;
+    height: 1px;
+    border: none;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #c0c4c6));
+}
+
  /*===============================================*\
   *= Header Area  Section | Code Start From Here =*
  \*===============================================*/
-
+header{
+}
 /**************** Top-Header Start ****************/
 
 .top-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 200px;
 }
 .brand-name h2{
     transition: .3s;
@@ -53,12 +70,6 @@ a{
     text-decoration: underline;
     cursor:pointer;
     color:var(--color-primary);
-}
-.menu ul{
-    list-style: none;
-}
-.menu li{
-    display: inline-block;
 }
 .menu li a{
     padding: 10px 20px;
@@ -113,7 +124,8 @@ a{
     transform: translateX(15px);
 }
 .feature-img{
-    background-color: aquamarine;
+    background-image: url('../img/Circle-design.svg');
+    border: 1px solid #c0c4c6;
     border-radius: 50%;
     transition: 1s;
 }
@@ -149,3 +161,84 @@ a{
  /*===============================================*\
   *== Header Area  Section | Code End From Here ==*
  \*===============================================*/
+main{
+}
+.all-product{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3%;
+}
+.single-product{
+    border: 20px solid white;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #FFFFFF 0%, #F4F4F4 50%, #FFFFFF 100%);
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,.15);
+}
+.single-product img{
+    width: 100%;
+    height: 250px;
+}
+.product-details{
+    padding: 10px;
+}
+.product-details h3{
+    font-weight: 400;
+}
+.product-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.star{
+    color: tomato;
+}
+.single-product p{
+    margin: 10px 0px;
+}
+
+/*===============================================*\
+ *=== Main Area  Section | Code End From Here ===*
+\*===============================================*/
+
+
+/*===============================================*\
+ *== Footer Area Section| Code Start From Here ==*
+\*===============================================*/
+footer{
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+ }
+footer h2:hover{
+    color: var(--color-primary);
+    transition: .5s;
+}
+footer p{
+    margin: 10px 0px;;
+}
+footer p:hover{
+    text-decoration: underline;
+}
+footer ul{
+    padding: 0;
+}
+footer a{
+    font-size: 2em;
+    color: whitesmoke;
+    margin: 0 10px;
+}
+.fa-facebook-square:hover{
+    color: #4267B2;
+    
+}
+.fa-github-square:hover{
+    color: #0A0825;
+    background: white;
+}
+.fa-linkedin-square:hover{
+    color:#3171AC;
+}
+.fa-youtube-square:hover{
+    color: #E33122;
+}
